@@ -1,0 +1,52 @@
+#gallery
+{
+	/* Shadow */
+	box-shadow: 0rem 0rem 1rem 0.2rem;
+}
+
+#gallery  img
+{
+	/* Size */
+	width: 100%;
+}
+
+.gallery_header
+{
+	/* Positioning */
+	position: absolute;
+	bottom: 10%;
+	
+	/* Size */
+	width: 100%;
+	height: 3rem;
+	
+	/* Text */
+	text-align: center;
+	font-size: 2rem;
+	font-family: GautamiBold;
+	
+	/* Color */
+	color: white;
+	background-color: rgba(0, 0, 0, 0.60);
+	
+	/* Shadow */
+	text-shadow: 0rem 0rem 1rem black;
+}
+
+.slider_description
+{
+	/* Positioning */
+	position: absolute;
+	top: 100%;
+	
+	/* Size */
+	width: 100%;
+	
+	/* Padding and borders */
+	padding-top: 1.2rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	
+	/* Text */
+	text-align: center;
+}

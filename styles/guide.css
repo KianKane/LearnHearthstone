@@ -1,0 +1,72 @@
+#guide
+{
+	/* Padding and borders */
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+#guide p
+{
+	/* Padding and borders */
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+#guide h2
+{
+	/* Text */
+	font-family: GautamiBold;
+	font-size: 1.4em;
+	line-height: 1.8rem;
+	
+	/* Color */
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.guide_image
+{
+	/* Positioning */
+	float: right;
+	
+	/* Size */
+	width: 50%;
+	
+	/* Padding and borders */
+	padding-left: 0.5rem;
+	
+	/* Text */
+	text-align: center;
+}
+
+.guide_image img
+{
+	/* Size */
+	width: 100%;
+	
+	/* Shadow */
+	box-shadow: 0rem 0rem 1rem 0.2rem;
+}
+
+.guide_image p
+{
+	/* Text */
+	font-size: 0.9rem;
+	
+	/* Color */
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#back
+{
+	/* Positioning */
+	clear: both;
+	
+	/* Padding and borders */
+	padding-left: 2.5rem;
+	
+	/* Text */
+	text-align: left;
+	
+	/* Size */
+	width: 9.3rem;
+}

@@ -1,0 +1,26 @@
+#glossary_banner
+{
+	/* Background image */
+	background-image: url("../images/glossary_banner.png");
+}
+
+#glossary
+{
+	/* Padding and borders */
+	padding: 0.5rem;
+}
+
+#glossary p
+{
+	/* Padding and borders */
+	padding-top: 0.8rem;
+	
+	/* Text */
+	font-size: 1.4rem;
+}
+
+#glossary p i
+{
+	/* Text */
+	font-size: 1.1rem;
+}

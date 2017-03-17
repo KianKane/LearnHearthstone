@@ -1,0 +1,42 @@
+#beginner_guides_banner
+{
+	/* Background image */
+	background-image: url("../images/beginner_guides_banner.png");
+}
+
+#intermediate_guides_banner
+{
+	/* Background image */
+	background-image: url("../images/intermediate_guides_banner.png");
+}
+
+.arrow_up, .arrow_down
+{
+	/* Positioning */
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	
+	/* Size */
+	width: 2rem;
+	height: 2rem;
+	
+	/* Background image */
+	background-size: 100% 200%;
+	background-image: url('../images/arrow_vertical.png');
+}
+
+.arrow_up
+{
+	/* Background image */
+	background-position: 0% 0%;
+}
+
+.arrow_down
+{
+	/* Display */
+	display:none;
+	
+	/* Background image */
+	background-position: 0% 100%;
+}

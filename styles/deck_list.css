@@ -1,0 +1,73 @@
+#deck
+{
+	/* Padding and borders */
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+#deck p
+{
+	/* Padding and borders */
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+#deck h2
+{
+	/* Text */
+	font-family: GautamiBold;
+	font-size: 1.4em;
+	line-height: 1.8rem;
+	
+	/* Color */
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.deck_image
+{
+	/* Size */
+	width: 100%;
+}
+
+.deck_image img
+{
+	/* Size */
+	width: 100%;
+	
+	/* Shadow */
+	box-shadow: 0rem 0rem 1rem 0.2rem;
+}
+
+#list
+{
+	/* Padding and borders */
+	padding-bottom: 1rem;
+}
+
+.column
+{
+	/* Positioning */
+	float:left;
+	
+	/* Size */
+	width: 50%;
+}
+
+#curve
+{
+	/* Positioning */
+	clear: both;
+	
+	/* Padding and borders */
+	padding-top: 0.5rem;
+}
+
+#back
+{
+	/* Positioning */
+	clear: both;
+	
+	/* Size */
+	width: 50%;
+	min-width: 6rem;
+}
