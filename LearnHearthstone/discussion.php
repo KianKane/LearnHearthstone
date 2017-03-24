@@ -36,7 +36,7 @@
 					<input type="text" name="comment">
 					<input type="submit" value="Submit">
 				</form>
-				<?php include "php/all_comments.php"; ?>
+				<?php include "../../LearnHearthstoneSecure/php/all_comments.php"; ?>
 				<footer>
 					<a class="button" href="#">Administrator Login</a>
 				</footer>
