@@ -14,24 +14,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 				<div class="banner" id="beginner_guides_banner">
 					<div class="banner_header">
@@ -41,8 +24,8 @@
 					</div>  <!-- /banner_header -->
 				</div>  <!-- /banner -->
 				<div id="beginner_guides">
-					<a class="button centered_button" href="what_is_hearthstone.html">What is Hearthstone?</a>
-					<a class="button centered_button" href="creating_your_first_deck.html">Creating your first deck</a>
+					<a class="button centered_button" href="what_is_hearthstone.php">What is Hearthstone?</a>
+					<a class="button centered_button" href="creating_your_first_deck.php">Creating your first deck</a>
 				</div>  <!-- /beginner_guides -->
 				<div class="banner" id="intermediate_guides_banner">
 					<div class="banner_header">
@@ -52,8 +35,8 @@
 					</div>  <!-- /banner_header -->
 				</div>  <!-- /banner -->
 				<div id="intermediate_guides">
-					<a class="button centered_button" href="about_card_advantage.html">About card advantage</a>
-					<a class="button centered_button" href="drafting_for_arena.html">Drafting for arena</a>
+					<a class="button centered_button" href="about_card_advantage.php">About card advantage</a>
+					<a class="button centered_button" href="drafting_for_arena.php">Drafting for arena</a>
 				</div>  <!-- /beginner_guides -->
 				<hr/>
 			</div> <!-- /content -->

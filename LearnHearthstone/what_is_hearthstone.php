@@ -14,24 +14,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 				<div class="page_header">What is Hearthstone?</div>
 				<div id="guide">
@@ -45,7 +28,7 @@
 					</div> <!-- /guide_image -->
 					<p>Hearthstone is popular amongst competitive gamers, with many tournaments run around the world.  Usually decks played in tournaments will cause similar decks to become popular in casual play.</p>
 				</div> <!-- /guide -->
-				<a id="back" class="button" href="guides.html">< Back</a>
+				<a id="back" class="button" href="guides.php">< Back</a>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
 	</body>

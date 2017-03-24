@@ -14,24 +14,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 				<div class="page_header">Drafting for arena</div>
 				<div id="guide">
@@ -47,7 +30,7 @@
 					<h2>Drafting the rest of the deck</h2>
 					<p>After you have picked the first ten or so cards a tier list will no longer cut it.  You have enough cards now that the rest should be picked based on what your deck does and does not contain.  Try to make sure you have a relatively smooth mana curve and pick cards that work well with your previous choices.</p>
 				</div> <!-- /guide -->
-				<a id="back" class="button" href="guides.html">< Back</a>
+				<a id="back" class="button" href="guides.php">< Back</a>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
 	</body>

@@ -14,34 +14,17 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 				<div id="gallery">
 					<div class="slider">
-						<div><a href="guides.html"><div class="noselect"><img src="images/guides.png" alt="Guides"/><div class="gallery_header">Guides</div></div></a>
+						<div><a href="guides.php"><div class="noselect"><img src="images/guides.png" alt="Guides"/><div class="gallery_header">Guides</div></div></a>
 						<p class="slider_description">There is always more to learn!  Check out the guides section to learn more about the game!</p></div>
-						<div><a href="deck_lists.html"><div class="noselect"><img src="images/deck_lists.png" alt="Deck lists"/><div class="gallery_header">Deck lists</div></div></a>
+						<div><a href="deck_lists.php"><div class="noselect"><img src="images/deck_lists.png" alt="Deck lists"/><div class="gallery_header">Deck lists</div></div></a>
 						<p class="slider_description">Need help deciding what to bring to battle?  Check out our already created deck lists for inspiration!</p></div>
-						<div><a href="glossary.html"><div class="noselect"><img src="images/glossary.png" alt="Glossary"/><div class="gallery_header">Glossary</div></div></a>
+						<div><a href="glossary.php"><div class="noselect"><img src="images/glossary.png" alt="Glossary"/><div class="gallery_header">Glossary</div></div></a>
 						<p class="slider_description">Confused about some of the words and phrases used in Hearthstone?  Check out the glossary!</p></div>
-						<div><a href="challenges.html"><div class="noselect"><img src="images/challenges.png" alt="Challenges"/><div class="gallery_header">Challenges</div></div></a>
+						<div><a href="challenges.php"><div class="noselect"><img src="images/challenges.png" alt="Challenges"/><div class="gallery_header">Challenges</div></div></a>
 						<p class="slider_description">Test your knowledge of the game with our interactive challenges!</p></div>
 						<div><a href="discussion.php"><div class="noselect"><img src="images/discussion.png" alt="Discussion"/><div class="gallery_header">Discussion</div></div></a>
 						<p class="slider_description">Collaborate and communicate with like minded Hearthstone players on our discussion page!</p></div>

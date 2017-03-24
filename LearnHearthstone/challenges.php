@@ -14,24 +14,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 			
 				<div class="challenge">
@@ -97,7 +80,7 @@
 				<div id="status_area">
 					<p><span id="score_area">Score: <span id="score"></span></span><span id="question_area">  -  Question <span id="index"></span></span>/<span id="max_index"></span></p>
 				</div>  <!-- /status_area -->
-				<a id="restart" class="button" href="challenges.html">Restart</a>
+				<a id="restart" class="button" href="challenges.php">Restart</a>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
 	</body>

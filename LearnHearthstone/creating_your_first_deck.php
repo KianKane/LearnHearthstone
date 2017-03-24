@@ -14,24 +14,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 				<div class="page_header">Creating your first deck</div>
 				<div id="guide">
@@ -45,9 +28,9 @@
 					<h2>Tip 2 – Minions/Spells</h2>
 					<p>You need to make sure your deck has enough minions.  A purely spell deck will have many troubles.  A good guideline when starting out is to have at least 20 minions in your deck.  You can ignore this tip once you have a better grasp of deck building as it is not a rule only a guideline.</p>
 					<h2>Tip 3 – Take Inspiration</h2>
-					<p>Learn from other decks whenever you can.  Try to figure out what makes your opponents deck strong and see if you can replicate it.  The internet is also full of decks that you can draw inspiration from.  Take a look at our <a href="deck_lists.html">deck lists</a> section!</p>
+					<p>Learn from other decks whenever you can.  Try to figure out what makes your opponents deck strong and see if you can replicate it.  The internet is also full of decks that you can draw inspiration from.  Take a look at our <a href="deck_lists.php">deck lists</a> section!</p>
 				</div> <!-- /guide -->
-				<a id="back" class="button" href="guides.html">< Back</a>
+				<a id="back" class="button" href="guides.php">< Back</a>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
 	</body>

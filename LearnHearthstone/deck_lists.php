@@ -14,32 +14,15 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="banner">
-				<div id="header">
-					<div id="menu_button">
-						<img src="images/menu.png" alt="Menu"></img>
-					</div> <!-- /menu_button -->
-					<p class="noselect">Learning Hearthstone</p>
-				</div> <!-- /header -->
-				<div id="menu" class="noselect">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="guides.html">Guides</a></li>
-						<li><a href="deck_lists.html">Deck lists</a></li>
-						<li><a href="challenges.html">Challenges</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.php">Discussion</a></li>
-					</ul>
-				</div> <!-- /menu -->
-			</div> <!-- /banner -->
+			<?php include "banner.html"; ?>
 			<div id="content">
 				<div class="banner" id="deck_lists_banner">
 					<div class="banner_header">
 						<p class="noselect">Deck Lists</p>
 					</div>  <!-- /banner_header -->
 				</div>  <!-- /banner -->
-				<a class="button centered_button" href="mech_mage.html">Mech Mage</a>
-				<a class="button centered_button" href="dragon_priest.html">Dragon Priest</a>
+				<a class="button centered_button" href="mech_mage.php">Mech Mage</a>
+				<a class="button centered_button" href="dragon_priest.php">Dragon Priest</a>
 				<hr/>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
