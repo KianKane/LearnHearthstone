@@ -26,7 +26,7 @@
 						<li><a href="deck_lists.html">Deck lists</a></li>
 						<li><a href="challenges.html">Challenges</a></li>
 						<li><a href="glossary.html">Glossary</a></li>
-						<li><a href="discussion.html">Discussion</a></li>
+						<li><a href="discussion.php">Discussion</a></li>
 					</ul>
 				</div> <!-- /menu -->
 			</div> <!-- /banner -->
@@ -36,10 +36,7 @@
 					<input type="text" name="comment">
 					<input type="submit" value="Submit">
 				</form>
-				<div class="comment">
-					<p>Alias</p>
-					<p>Comment Body</p>
-				</div>
+				<?php include "php/all_comments.php"; ?>
 				<footer>
 					<a class="button" href="#">Administrator Login</a>
 				</footer>
