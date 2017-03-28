@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Discussion - Learning Hearthstone</title>
+		<title>Administrator Login - Learning Hearthstone</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="styles/sss.css" media="screen" />
@@ -14,15 +14,14 @@
 		<div id="container">
 			<?php include "banner.html"; ?>
 			<div id="content">
-				<form method="post">
-					<label for="alias">Alias:</label><input type="text" name="alias" value="Anonymous"></input>
-					<input type="text" name="comment">
-					<input type="submit" value="Submit">
+				<form id="login" method="post">
+					<label for="username"><p>Username</p></label>
+					<input type="text" name="username"></input>
+					<label for="password"><p>Password</p></label>
+					<input type="password" name="password"></input>
 				</form>
-				<?php include "../../LearnHearthstoneSecure/php/all_comments.php"; ?>
-				<footer>
-					<a class="button centered_button" href="administrator_login.php">Administrator Login</a>
-				</footer>
+				<a class="button centered_button" href="#" onclick="document.getElementById('login').submit()">Submit</a>
+				<a class="button centered_button" href="discussion.php">Cancel</a>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
 	</body>
