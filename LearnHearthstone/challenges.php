@@ -2,14 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Challenges - Learning Hearthstone</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="styles/sss.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="styles/shared.css" media="screen" />
+		<?php include "shared_head.html"; ?>
 		<link rel="stylesheet" type="text/css" href="styles/challenges.css" media="screen" />
-		<script src="scripts/jquery-1.11.3.min.js"></script>
-		<script src="scripts/sss.min.js"></script>
-		<script src="scripts/shared.js"></script>
 		<script src="scripts/challenges.js"></script>
 	</head>
 	<body>
