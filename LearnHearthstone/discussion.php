@@ -3,17 +3,17 @@
 	<head>
 		<title>Discussion - Learning Hearthstone</title>
 		<?php include "shared_head.html"; ?>
+		<link rel="stylesheet" type="text/css" href="styles/discussion.css" media="screen" />
 	</head>
 	<body>
 		<div id="container">
 			<?php include "banner.html"; ?>
 			<div id="content">
-				<form method="post">
-					<label for="alias"><p>Alias:</p></label>
-					<input type="text" name="alias" value="Anonymous"></input>
-					<input type="text" name="comment">
-					<p>Comments will not display until they have been approved by an administrator.</p>
-					<input type="submit" value="Submit">
+				<form action="../../LearnHearthstoneSecure/php/post_comment.php" method="post">
+					<input type="text" id="aliasText" name="alias" value="Anonymous"></input>
+					<textarea id="commentText" name="comment"></textarea>
+					<input type="submit" id="submitButton" value="Submit">
+					<p id="approvalWarning">Comments will not display until they have been approved by an administrator.</p>
 				</form>
 				<?php include "../../LearnHearthstoneSecure/php/all_comments.php"; ?>
 				<footer>

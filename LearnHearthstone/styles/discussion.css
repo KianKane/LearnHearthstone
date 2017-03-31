@@ -1,0 +1,75 @@
+form
+{
+	margin-bottom: 1rem;
+}
+
+#aliasText
+{
+	width: 50%;
+	min-width: 10rem;
+}
+
+#commentText
+{
+
+	width: 100%;
+	min-height: 4em;
+	resize: vertical;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#approvalWarning
+{
+	width: 60%;
+	font-size: 0.70em;
+	display: inline-block;
+	color: red;
+}
+
+#submitButton
+{
+	display: inline-block;
+	width: 35%;
+}
+
+.userComment
+{
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.userAlias
+{
+	float: left;
+	width: 60%;
+	font-weight: bold;
+}
+
+.approveButton, .deleteButton
+{
+	float: left;
+	width: 20%;
+	border-radius: 4px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+
+.approveButton
+{
+	background-color: green;
+}
+
+.deleteButton
+{
+	background-color: red;
+}
+
+.userCommentBody
+{
+	width: 100%;
+	padding-top: 1.5rem;
+}

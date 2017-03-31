@@ -7,8 +7,12 @@
 	$toEcho = "";
 	foreach ($comments as $comment)
 	{
-		$toEcho .= "<h4>" . $comment->alias . "<h4>";
-		$toEcho .= "<p>" . $comment->content . "<p>";
+		$toEcho .= "<div class=\"userComment\">";
+		$toEcho .= "<div class=\"userAlias\">" . $comment->alias . "</div>";
+		$toEcho .= "<a class=\"approveButton\" href=\"#\">Approve</a>";
+		$toEcho .= "<a class=\"deleteButton\" href=\"#\">Delete</a>";
+		$toEcho .= "<div class=\"userCommentBody\">" . $comment->content . "</div>";
+		$toEcho .= "</div>";
 	}
 	echo $toEcho;
 ?>
