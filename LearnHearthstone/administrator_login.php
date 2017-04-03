@@ -8,7 +8,7 @@
 		<div id="container">
 			<?php include "banner.html"; ?>
 			<div id="content">
-				<form id="login" method="post">
+				<form id="login" action="database/login.php" method="post">
 					<label for="username"><p>Username</p></label>
 					<input type="text" name="username"></input>
 					<label for="password"><p>Password</p></label>

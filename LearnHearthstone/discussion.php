@@ -10,7 +10,12 @@
 		<div id="container">
 			<?php include "banner.html"; ?>
 			<div id="content">
-				<form action="database/post_comment.php" method="post">
+				<?php
+					session_start();
+					if ($_SESSION["admin"])
+						echo "<p>You are logged in as an administrator.</p>";
+				?>
+				<form id="postComment" action="database/post_comment.php" method="post">
 					<input type="text" id="aliasText" name="alias" value="Anonymous"></input>
 					<textarea id="commentText" name="comment"></textarea>
 					<input type="submit" id="submitButton" value="Submit">
@@ -18,7 +23,12 @@
 				</form>
 				<?php include "database/all_comments.php"; ?>
 				<footer>
-					<a class="button centered_button" href="administrator_login.php">Administrator Login</a>
+				<?php
+					if ($_SESSION["admin"])
+						echo "<a class=\"button centered_button\" href=\"database/logout.php\">Logout</a>";
+					else
+						echo "<a class=\"button centered_button\" href=\"administrator_login.php\">Administrator Login</a>";
+				?>
 				</footer>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->

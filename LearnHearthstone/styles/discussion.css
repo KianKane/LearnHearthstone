@@ -1,4 +1,4 @@
-form
+#postComment
 {
 	margin-bottom: 1rem;
 }
@@ -48,9 +48,13 @@ form
 	font-weight: bold;
 }
 
+.commentForm
+{
+}
+
 .approveButton, .deleteButton
 {
-	float: left;
+	float: right;
 	width: 20%;
 	border-radius: 4px;
 	text-decoration: none;
