@@ -18,6 +18,6 @@
 	}
 	else
 	{
-		header('Location: http://studentnet.dundeeandangus.ac.uk/~1503052/LearnHearthstone/administrator_login.php');
+		header('Location: http://studentnet.dundeeandangus.ac.uk/~1503052/LearnHearthstone/administrator_login.php?failed=true');
 	}
 ?>

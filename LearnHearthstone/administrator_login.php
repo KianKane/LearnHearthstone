@@ -18,5 +18,9 @@
 				<a class="button centered_button" href="discussion.php">Cancel</a>
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
+		<?php
+			if ($_GET["failed"])
+				echo "<script>alert(\"Invalid username or password.\");</script>";
+		?>
 	</body>
 </html>

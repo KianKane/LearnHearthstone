@@ -16,7 +16,12 @@
 						echo "<p>You are logged in as an administrator.</p>";
 				?>
 				<form id="postComment" action="database/post_comment.php" method="post">
-					<input type="text" id="aliasText" name="alias" value="Anonymous"></input>
+					<input type="text" id="aliasText" name="alias" value="<?php 
+							if (isset($_COOKIE["alias"]))
+								echo $_COOKIE["alias"];
+							else
+								echo "Anonymous";
+						?>"></input>
 					<textarea id="commentText" name="comment"></textarea>
 					<input type="submit" id="submitButton" value="Submit">
 					<p id="approvalWarning">Comments will not display until they have been approved by an administrator.</p>

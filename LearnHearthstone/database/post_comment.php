@@ -4,6 +4,8 @@
 	$alias = strip_tags($_POST["alias"]);
 	$comment = strip_tags($_POST["comment"]);
 	
+	setcookie("alias", $alias, time() + (86400 * 30), "/");
+	
 	$query = $con->prepare("INSERT INTO LH_Comments (posted, alias, content, approved) VALUES (NOW(), :alias, :comment, FALSE)");
 	$success = $query->execute([
 		'alias' => $alias,
