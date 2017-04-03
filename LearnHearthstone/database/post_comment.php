@@ -1,8 +1,8 @@
 <?php
 	include_once "database_connection.php";
 	
-	$alias = $_POST["alias"];
-	$comment = $_POST["comment"];
+	$alias = strip_tags($_POST["alias"]);
+	$comment = strip_tags($_POST["comment"]);
 	
 	$query = $con->prepare("INSERT INTO LH_Comments (posted, alias, content, approved) VALUES (NOW(), :alias, :comment, FALSE)");
 	$success = $query->execute([
