@@ -4,6 +4,7 @@
 		<title>Discussion - Learning Hearthstone</title>
 		<?php include "shared_head.html"; ?>
 		<link rel="stylesheet" type="text/css" href="styles/discussion.css" media="screen" />
+		<script src="scripts/discussion.js"></script>
 	</head>
 	<body>
 		<div id="container">

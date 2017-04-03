@@ -1,7 +1,7 @@
 <?php
 	include_once "database_connection.php";
 	
-	$query = $con->query("SELECT alias, content FROM LH_Comments");
+	$query = $con->query("SELECT alias, content FROM LH_Comments ORDER BY posted DESC");
 	$comments = $query->fetchAll(PDO::FETCH_OBJ);
 	
 	$toEcho = "";
