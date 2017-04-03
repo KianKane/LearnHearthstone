@@ -19,6 +19,7 @@
 			</div> <!-- /content -->
 		</div>  <!-- /container -->
 		<?php
+			// If the failed flag is set then that means that the user has just failed a login attempt.
 			if ($_GET["failed"])
 				echo "<script>alert(\"Invalid username or password.\");</script>";
 		?>
