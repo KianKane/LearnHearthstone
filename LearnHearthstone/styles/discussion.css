@@ -1,75 +1,101 @@
 #postComment
 {
+	/* Position and Size */
 	margin-bottom: 1rem;
 }
 
 #aliasText
 {
+	/* Size */
 	width: 50%;
 	min-width: 10rem;
 }
 
 #commentText
 {
-
-	width: 100%;
-	min-height: 4em;
-	resize: vertical;
+	/* Position and Size */
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	width: 100%;
+	min-height: 4em;
+	
+	/* Other */
+	resize: vertical;
 }
 
 #approvalWarning
 {
-	width: 60%;
-	font-size: 0.70em;
+	/* Display */
 	display: inline-block;
+	
+	/* Position and Size */
+	width: 60%;
+	
+	/* Text */
+	font-size: 0.70em;
 	color: red;
 }
 
 #submitButton
 {
+	/* Display */
 	display: inline-block;
+	
+	/* Position and Size */
 	width: 35%;
 }
 
 .userComment
 {
+	/* Position and Size */
+	margin-bottom: 1rem;
 	width: 100%;
 	padding: 0.5rem;
-	margin-bottom: 1rem;
+	
+	/* Background */
 	background-color: rgba(0,0,0,0.2);
 }
 
 .userAlias
 {
+	/* Position and Size */
 	float: left;
 	width: 60%;
+	
+	/* Text */
 	font-weight: bold;
 }
 
 .approveButton, .deleteButton
 {
+	/* Position and Size */
 	float: right;
 	width: 20%;
-	border-radius: 4px;
+	
+	/* Text */
 	text-decoration: none;
 	color: white;
 	text-align: center;
+	
+	/* Border */
+	border-radius: 4px;
 }
 
 .approveButton
 {
+	/* Background */
 	background-color: green;
 }
 
 .deleteButton
 {
+	/* Background */
 	background-color: red;
 }
 
 .userCommentBody
 {
+	/* Position and Size */
 	width: 100%;
 	padding-top: 1.5rem;
 }
