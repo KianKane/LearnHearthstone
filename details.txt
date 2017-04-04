@@ -1,0 +1,5 @@
+       name : Kian Kane
+ student id : 1503052
+website url : http://studentnet.dundeeandangus.ac.uk/~1503052/LearnHearthstone/index.php
+ admin user : admin
+ admin pass : password
