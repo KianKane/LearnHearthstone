@@ -3,6 +3,7 @@
 	<head>
 		<title>Administrator Login - Learning Hearthstone</title>
 		<?php include "shared_head.html"; ?>
+		<link rel="stylesheet" type="text/css" href="styles/administrator_login.css" media="screen" />
 	</head>
 	<body>
 		<div id="container">

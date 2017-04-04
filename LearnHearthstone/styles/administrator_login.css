@@ -1,0 +1,15 @@
+form
+{
+	/* Position and Size */
+	width: 100%;
+	
+	/* Position Child Elements */
+	display: inline-block;
+	text-align: center;
+}
+
+form input
+{
+	/* Position and Size */
+	margin-bottom: 1em;
+}
