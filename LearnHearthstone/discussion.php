@@ -17,6 +17,7 @@
 				?>
 				<form id="postComment" action="database/post_comment.php" method="post">
 					<input type="text" id="aliasText" name="alias" value="<?php 
+							// If the alias cookie is set then use the saved alias.  Otherwise the default value is "Anonymous".
 							if (isset($_COOKIE["alias"]))
 								echo $_COOKIE["alias"];
 							else
@@ -29,6 +30,7 @@
 				<?php include "database/all_comments.php"; ?>
 				<footer>
 				<?php
+					// Show the a login or logout button depending on whether or not the user is already logged in.
 					if ($_SESSION["admin"])
 						echo "<a class=\"button centered_button\" href=\"database/logout.php\">Logout</a>";
 					else
