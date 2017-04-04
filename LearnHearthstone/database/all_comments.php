@@ -5,9 +5,9 @@
 	// Only allow unapproved comments to be selected if the user is logged in as an administrator.
 	$sql;
 	if ($_SESSION["admin"])
-		$sql = "SELECT id, approved, alias, content FROM LH_Comments ORDER BY posted DESC";
+		$sql = "SELECT id, CAST(approved AS UNSIGNED INTEGER) AS \"approved\", alias, content FROM LH_Comments ORDER BY posted DESC";
 	else
-		$sql = "SELECT id, approved, alias, content FROM LH_Comments WHERE approved = TRUE ORDER BY posted DESC";
+		$sql = "SELECT id, CAST(approved AS UNSIGNED INTEGER) AS \"approved\", alias, content FROM LH_Comments WHERE approved = TRUE ORDER BY posted DESC";
 	
 	// Fetch data from database.
 	$query = $con->query($sql);
@@ -24,7 +24,7 @@
 		if ($_SESSION["admin"])
 		{
 			$toEcho .= "<form action=\"database/delete_comment.php\" method=\"post\"><input type=\"hidden\" name=\"id\" value=\"" . $comment->id . "\"><input type=\"submit\" class=\"deleteButton\" value=\"Delete\"></form>";
-			if ($comment->approved != "") // Black magic, should be fixed before this is submitted.
+			if ($comment->approved == 0)
 				$toEcho .= "<form action=\"database/approve_comment.php\" method=\"post\"><input type=\"hidden\" name=\"id\" value=\"" . $comment->id . "\"><input type=\"submit\" class=\"approveButton\" value=\"Approve\"></form>";
 		}
 		
