@@ -1,8 +1,8 @@
 <?php
 	// Hard coded database details, move along.
-	$dbhost = "studentnet.dundeeandangus.ac.uk";
-	$dbname = "db_1503052";
-	$dbuser = "1503052";
+	$dbhost = "localhost";
+	$dbname = "learning_hearthstone";
+	$dbuser = "learning";
 	$dbpass = "password"; // 100% secure.
 	
 	try
