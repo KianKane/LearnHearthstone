@@ -20,12 +20,12 @@
 	{
 		// Log the user in as an administrator if the password matched the hash.
 		$_SESSION["admin"] = true;
-		// Return the user to the discussion page. (NOTE: Look for way to use relative path instead of absolute path)
-		header('Location: http://studentnet.dundeeandangus.ac.uk/~1503052/LearnHearthstone/discussion.php');
+		// Return the user to the discussion page.
+		header('Location: /discussion.php');
 	}
 	else
 	{
-		// Otherwise return the user to the log in page with the failed flag set to true so that an error can be shown. (NOTE: Look for way to use relative path instead of absolute path)
-		header('Location: http://studentnet.dundeeandangus.ac.uk/~1503052/LearnHearthstone/administrator_login.php?failed=true');
+		// Otherwise return the user to the log in page with the failed flag set to true so that an error can be shown.
+		header('Location: /administrator_login.php?failed=true');
 	}
 ?>
